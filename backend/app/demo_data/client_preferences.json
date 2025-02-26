@@ -1,0 +1,26 @@
+{
+  "APAC distributor": {
+    "preferred_products": ["autocallable", "snowball"],
+    "preferred_coupon_range": [8, 12],
+    "preferred_tenor_months": [12, 24],
+    "preferred_underlyings": ["Samsung", "HSI", "HSCEI"]
+  },
+  "Korean distributor": {
+    "preferred_products": ["snowball"],
+    "preferred_coupon_range": [10, 14],
+    "preferred_tenor_months": [12, 18],
+    "preferred_underlyings": ["Samsung", "Nifty", "HSCEI"]
+  },
+  "private bank": {
+    "preferred_products": ["autocallable"],
+    "preferred_coupon_range": [6, 10],
+    "preferred_tenor_months": [6, 18],
+    "preferred_underlyings": ["SPX", "Nvidia"]
+  },
+  "institutional client": {
+    "preferred_products": ["barrier note"],
+    "preferred_coupon_range": [5, 9],
+    "preferred_tenor_months": [24, 36],
+    "preferred_underlyings": ["SPX", "HSI", "HSCEI"]
+  }
+}

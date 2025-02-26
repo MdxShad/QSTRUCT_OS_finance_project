@@ -1,0 +1,8 @@
+{
+  "Nvidia": {"volatility": 0.35, "gap_risk": 0.25},
+  "Samsung": {"volatility": 0.28, "gap_risk": 0.20},
+  "HSI": {"volatility": 0.22, "gap_risk": 0.18},
+  "SPX": {"volatility": 0.18, "gap_risk": 0.15},
+  "HSCEI": {"volatility": 0.25, "gap_risk": 0.22},
+  "NIFTY": {"volatility": 0.26, "gap_risk": 0.19}
+}

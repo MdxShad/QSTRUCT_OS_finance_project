@@ -1,0 +1,349 @@
+[
+  {
+    "audit_id": "457ed480-78fa-4589-aff0-a83443b72d04",
+    "timestamp": "2026-05-14T23:28:26.413814Z",
+    "input_rfq": {
+      "raw_text": "",
+      "client_segment": "apac distributor",
+      "region": "APAC"
+    },
+    "parsed_payoff": {
+      "product_type": "autocallable",
+      "currency": "USD",
+      "tenor_months": 24,
+      "coupon_target_min": 11.0,
+      "coupon_target_max": 11.0,
+      "observation_frequency": "quarterly",
+      "barrier_type": "KI",
+      "barrier_level": 60.0,
+      "autocall_trigger": 100.0,
+      "basket_rule": "worst-of",
+      "underlyings": [
+        "Nvidia",
+        "Samsung",
+        "Hsi"
+      ],
+      "wrapper": "note",
+      "callable_after_months": 6,
+      "client_segment": "apac distributor",
+      "region": "APAC",
+      "confidence_score": 1.0,
+      "notional": 6.0,
+      "settlement_type": null,
+      "issuer_call": null,
+      "memory_coupon": null,
+      "coupon_barrier": null,
+      "protection_type": null,
+      "capital_at_risk": null,
+      "basket_size": 3,
+      "worst_underlying": "Hsi",
+      "market_regime": null,
+      "jurisdiction_or_wrapper_region": null,
+      "documentation_complexity_level": 1
+    },
+    "parser_notes": {
+      "extracted_fields": [
+        "product_type",
+        "currency",
+        "tenor_months",
+        "coupon_target_min",
+        "coupon_target_max",
+        "observation_frequency",
+        "barrier_level",
+        "autocall_trigger",
+        "notional",
+        "basket_rule",
+        "underlyings",
+        "wrapper",
+        "callable_after_months",
+        "client_segment",
+        "region"
+      ],
+      "uncertain_fields": [],
+      "assumptions": [
+        "basket_size",
+        "worst_underlying"
+      ]
+    },
+    "validation_warnings": [],
+    "original_scores": {
+      "win_probability_detail": {
+        "win_probability": 0.7,
+        "drivers_positive": [],
+        "drivers_negative": [],
+        "confidence_level": 1.0,
+        "reason_codes": []
+      },
+      "desk_economics_score": 0.7250000000000001,
+      "risk_assessment": {
+        "barrier_distance_score": 0.4,
+        "basket_concentration_score": 0.5965902311474645,
+        "worst_of_penalty": 0.2,
+        "volatility_pressure_score": 0.5866666666666667,
+        "gap_risk_score": 0.43333333333333335,
+        "hedge_difficulty_score": 0.855,
+        "correlation_sensitivity_score": 0.8,
+        "tenor_risk_score": 0.25,
+        "documentation_complexity_score": 0.3,
+        "suitability_warning_score": 0.0,
+        "desk_attractiveness_score": 0.5578409768852535,
+        "overall_risk_score": 0.4421590231147465,
+        "warnings": []
+      }
+    },
+    "alternatives": [
+      {
+        "alternative_id": "7f9dcfe2",
+        "title": "Barrier relief",
+        "changed_terms": {
+          "barrier_level": {
+            "from": 60.0,
+            "to": 70.0
+          }
+        },
+        "payoff_object": {
+          "product_type": "autocallable",
+          "currency": "USD",
+          "tenor_months": 24,
+          "coupon_target_min": 10.5,
+          "coupon_target_max": 10.5,
+          "observation_frequency": "quarterly",
+          "barrier_type": "KI",
+          "barrier_level": 70.0,
+          "autocall_trigger": 100.0,
+          "basket_rule": "worst-of",
+          "underlyings": [
+            "Nvidia",
+            "Samsung",
+            "Hsi"
+          ],
+          "wrapper": "note",
+          "callable_after_months": 6,
+          "client_segment": "apac distributor",
+          "region": "APAC",
+          "confidence_score": 1.0,
+          "notional": 6.0,
+          "settlement_type": null,
+          "issuer_call": null,
+          "memory_coupon": null,
+          "coupon_barrier": null,
+          "protection_type": null,
+          "capital_at_risk": null,
+          "basket_size": 3,
+          "worst_underlying": "Hsi",
+          "market_regime": null,
+          "jurisdiction_or_wrapper_region": null,
+          "documentation_complexity_level": 1
+        },
+        "win_probability": 0.76,
+        "desk_economics_score": 0.7875,
+        "risk_score": 0.4321590231147464,
+        "documentation_score": 0.7,
+        "win_probability_delta": 0.06000000000000005,
+        "desk_economics_delta": 0.06249999999999989,
+        "risk_reduction": 0.010000000000000064,
+        "documentation_delta": 0.0,
+        "final_score": 0.6218750000000001,
+        "expected_client_impact": "Improves downside protection by raising the knock‑in level, increasing client comfort.",
+        "expected_desk_impact": "Reduces gap risk and hedge difficulty, improving desk margin.",
+        "main_tradeoff": "Slightly reduces coupon, potentially lowering client headline return.",
+        "approval_required": false,
+        "human_approval_note": "Higher barrier changes pricing; ensure coupon remains acceptable to client."
+      },
+      {
+        "alternative_id": "a978cf0d",
+        "title": "Coupon/risk rebalance",
+        "changed_terms": {
+          "coupon_target_min": {
+            "from": 11.0,
+            "to": 10.0
+          },
+          "coupon_target_max": {
+            "from": 11.0,
+            "to": 10.0
+          }
+        },
+        "payoff_object": {
+          "product_type": "autocallable",
+          "currency": "USD",
+          "tenor_months": 24,
+          "coupon_target_min": 10.0,
+          "coupon_target_max": 10.0,
+          "observation_frequency": "quarterly",
+          "barrier_type": "KI",
+          "barrier_level": 60.0,
+          "autocall_trigger": 100.0,
+          "basket_rule": "worst-of",
+          "underlyings": [
+            "Nvidia",
+            "Samsung",
+            "Hsi"
+          ],
+          "wrapper": "note",
+          "callable_after_months": 6,
+          "client_segment": "apac distributor",
+          "region": "APAC",
+          "confidence_score": 1.0,
+          "notional": 6.0,
+          "settlement_type": null,
+          "issuer_call": null,
+          "memory_coupon": null,
+          "coupon_barrier": null,
+          "protection_type": null,
+          "capital_at_risk": null,
+          "basket_size": 3,
+          "worst_underlying": "Hsi",
+          "market_regime": null,
+          "jurisdiction_or_wrapper_region": null,
+          "documentation_complexity_level": 1
+        },
+        "win_probability": 0.72,
+        "desk_economics_score": 0.7500000000000001,
+        "risk_score": 0.4421590231147465,
+        "documentation_score": 0.7,
+        "win_probability_delta": 0.020000000000000018,
+        "desk_economics_delta": 0.025000000000000022,
+        "risk_reduction": 0.0,
+        "documentation_delta": 0.0,
+        "final_score": 0.5985,
+        "expected_client_impact": "Lower coupons are easier to achieve, potentially increasing win probability.",
+        "expected_desk_impact": "Reduces financing cost and hedge complexity, improving desk economics.",
+        "main_tradeoff": "Client receives a lower headline coupon.",
+        "approval_required": false,
+        "human_approval_note": "Ensure the new coupon range still meets client expectations."
+      },
+      {
+        "alternative_id": "59813a03",
+        "title": "Schedule/trigger adjustment",
+        "changed_terms": {
+          "observation_frequency": {
+            "from": "quarterly",
+            "to": "monthly"
+          },
+          "autocall_trigger": {
+            "from": 100.0,
+            "to": 105.0
+          }
+        },
+        "payoff_object": {
+          "product_type": "autocallable",
+          "currency": "USD",
+          "tenor_months": 24,
+          "coupon_target_min": 11.0,
+          "coupon_target_max": 11.0,
+          "observation_frequency": "monthly",
+          "barrier_type": "KI",
+          "barrier_level": 60.0,
+          "autocall_trigger": 105.0,
+          "basket_rule": "worst-of",
+          "underlyings": [
+            "Nvidia",
+            "Samsung",
+            "Hsi"
+          ],
+          "wrapper": "note",
+          "callable_after_months": 6,
+          "client_segment": "apac distributor",
+          "region": "APAC",
+          "confidence_score": 1.0,
+          "notional": 6.0,
+          "settlement_type": null,
+          "issuer_call": null,
+          "memory_coupon": null,
+          "coupon_barrier": null,
+          "protection_type": null,
+          "capital_at_risk": null,
+          "basket_size": 3,
+          "worst_underlying": "Hsi",
+          "market_regime": null,
+          "jurisdiction_or_wrapper_region": null,
+          "documentation_complexity_level": 1
+        },
+        "win_probability": 0.73,
+        "desk_economics_score": 0.7250000000000001,
+        "risk_score": 0.4421590231147465,
+        "documentation_score": 0.7,
+        "win_probability_delta": 0.030000000000000027,
+        "desk_economics_delta": 0.0,
+        "risk_reduction": 0.0,
+        "documentation_delta": 0.0,
+        "final_score": 0.5952500000000001,
+        "expected_client_impact": "More frequent observations and a higher call trigger offer additional redemption opportunities and shorter investment horizon.",
+        "expected_desk_impact": "Earlier potential call dates shorten exposure duration, lowering risk.",
+        "main_tradeoff": "Increased operational workload from frequent observations.",
+        "approval_required": false,
+        "human_approval_note": "Verify operational feasibility of increased observation frequency."
+      },
+      {
+        "alternative_id": "0be9159c",
+        "title": "Underlying substitution",
+        "changed_terms": {
+          "underlyings": {
+            "from": [
+              "Nvidia",
+              "Samsung",
+              "Hsi"
+            ],
+            "to": [
+              "Nvidia",
+              "Samsung",
+              "SPX"
+            ]
+          }
+        },
+        "payoff_object": {
+          "product_type": "autocallable",
+          "currency": "USD",
+          "tenor_months": 24,
+          "coupon_target_min": 11.0,
+          "coupon_target_max": 11.0,
+          "observation_frequency": "quarterly",
+          "barrier_type": "KI",
+          "barrier_level": 60.0,
+          "autocall_trigger": 100.0,
+          "basket_rule": "worst-of",
+          "underlyings": [
+            "Nvidia",
+            "Samsung",
+            "SPX"
+          ],
+          "wrapper": "note",
+          "callable_after_months": 6,
+          "client_segment": "apac distributor",
+          "region": "APAC",
+          "confidence_score": 1.0,
+          "notional": 6.0,
+          "settlement_type": null,
+          "issuer_call": null,
+          "memory_coupon": null,
+          "coupon_barrier": null,
+          "protection_type": null,
+          "capital_at_risk": null,
+          "basket_size": 3,
+          "worst_underlying": "Hsi",
+          "market_regime": null,
+          "jurisdiction_or_wrapper_region": null,
+          "documentation_complexity_level": 1
+        },
+        "win_probability": 0.7,
+        "desk_economics_score": 0.7250000000000001,
+        "risk_score": 0.4421590231147465,
+        "documentation_score": 0.7,
+        "win_probability_delta": 0.0,
+        "desk_economics_delta": 0.0,
+        "risk_reduction": 0.0,
+        "documentation_delta": 0.0,
+        "final_score": 0.58625,
+        "expected_client_impact": "Replaces Hsi with SPX, introducing a more familiar or liquid index to clients.",
+        "expected_desk_impact": "Simplifies hedging by using a highly liquid benchmark.",
+        "main_tradeoff": "Alters correlation profile; may impact payoff pricing.",
+        "approval_required": false,
+        "human_approval_note": "Confirm that the replacement underlying aligns with client investment universe."
+      }
+    ],
+    "recommendation": "7f9dcfe2",
+    "ranking_version": "0.2",
+    "synthetic_data_version": "0.2",
+    "limitations": "All values are synthetic and for research only. Human review required."
+  }
+]
